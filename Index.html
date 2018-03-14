@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<script language="javascript">
+    function ChangePicture() {
+      if (document.getElementById("Picture1").src == "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28795479_1268657283234520_1454785234597656328_n.jpg?oh=c19f8309f03c20eb72908f6ba0deb291&oe=5B394885")
+      {
+         document.getElementById("Picture1").src = "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28783709_1264299203670328_9176978080568906708_n.jpg?oh=e98fd9829c628469ee6e75eb8d62c28a&oe=5B340498";
+         document.getElementById("special").innerHTML = "Coconut Shrimp Rundown";
+        }
+      else if (document.getElementById("Picture1").src == "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28783709_1264299203670328_9176978080568906708_n.jpg?oh=e98fd9829c628469ee6e75eb8d62c28a&oe=5B340498")
+      {
+         document.getElementById("Picture1").src = "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28056814_1255398341227081_6861074614501580330_n.jpg?oh=595167da2396b90588e33d5809661999&oe=5B384CCE";
+         document.getElementById("special").innerHTML = "Chipotle Steak Tacos";
+      }
+      else if (document.getElementById("Picture1").src == "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28056814_1255398341227081_6861074614501580330_n.jpg?oh=595167da2396b90588e33d5809661999&oe=5B384CCE")
+      {
+         document.getElementById("Picture1").src = "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/27973340_1249782861788629_2633443780716677296_n.jpg?oh=7b02daa35dcade458744432fadbd3f19&oe=5B337000";
+         document.getElementById("special").innerHTML = "Chicken Gyro Egg Rolls";
+      }
+      else
+      {
+        document.getElementById("Picture1").src = "https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28795479_1268657283234520_1454785234597656328_n.jpg?oh=c19f8309f03c20eb72908f6ba0deb291&oe=5B394885";
+        document.getElementById("special").innerHTML = "Pupusas con Curtido";
+      }
+    }
+    function About() {
+      if (document.getElementById("center").style.visibility == "visible")
+      {
+        document.getElementById("center").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "visible";
+        document.getElementById("contact").style.visibility = "hidden";
+      }
+      else if (document.getElementById("contact").style.visibility == "visible")
+      {
+        document.getElementById("center").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "visible";
+        document.getElementById("contact").style.visibility = "hidden";
+      }
+      else {
+        document.getElementById("center").style.visibility = "visible";
+        document.getElementById("about").style.visibility = "hidden";
+        document.getElementById("contact").style.visibility = "hidden";
+      }
+    }
+    function contact() {
+      if (document.getElementById("center").style.visibility == "visible")
+      {
+        document.getElementById("center").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "hidden";
+        document.getElementById("contact").style.visibility = "visible";
+      }
+      else if (document.getElementById("about").style.visibility == "visible")
+      {
+        document.getElementById("center").style.visibility = "hidden";
+        document.getElementById("about").style.visibility = "hidden";
+        document.getElementById("contact").style.visibility = "visible";
+      }
+      else {
+        document.getElementById("center").style.visibility = "visible";
+        document.getElementById("about").style.visibility = "hidden";
+        document.getElementById("contact").style.visibility = "hidden";
+      }
+    }
+</script>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/193/193897.svg" type="image/png">
+    <link href="styles/stylesNoGrid.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <title>Slope and Hatch</title>
+  </head>
+  <body>
+    <div class="grid">
+      <header>
+        <div class="header">
+          <h1 class="headerline" onclick="home()">Slope & Hatch</h1>
+          <div class="subtitles">
+            <h2 class="subtitle">taps</h2>
+            <h2 class="subtitle">||</h2>
+            <h2 class="subtitle">tacos</h2>
+            <h2 class="subtitle">||</h2>
+            <h2 class="subtitle">dogs</h2>
+            <h3>Glenwood Springs, Colorado</h3>
+          </div>
+        </div>
+      </header>
+    <!--  <div class="logo">      Taken out for moment
+        <img src="images/logo.png">
+      </div>-->
+      <div class="body">
+        <div class="center" id="center">
+          <div class="homepic">
+            <img  id="Picture1" class ="pupusas" onclick="ChangePicture()" src="https://scontent.fapa1-2.fna.fbcdn.net/v/t1.0-9/28795479_1268657283234520_1454785234597656328_n.jpg?oh=c19f8309f03c20eb72908f6ba0deb291&oe=5B394885" >
+            <h1 id="special">Pupusas con Curtido</h1>
+            <h2 id="clicker"> Click for more Specials ----></h2>
+          </div >
+            <h2 id="about" class="about"> "Owned and operated by Derek and Alex Bray, Slope & Hatch has been serving artisinal tacos, hot dogs, and all manner of street food out of their downtown Glenwood Springs location since late 2014. The restaurant has flourished in the competitive Roaring Fork Valley through their creative specials and diverse menu items that range from Thai curry vegetarian tacos to midwestern coney dogs and Carolina style BBQ pork nachos. Created with skill and experience, Slope & Hatch's menu is filled with tasty, unique and generously portioned cuisine." -Anthony Bourdain (after he eventually eats there) </h2>
+            <div id=contact>
+              <h3> 208 7th St <br> Glenwood Springs, CO 81601</h3>
+              <h3> (970) 230 9652 </h3>
+            </div>
+        </div>
+        <div class="nav">
+          <a target="_blank" href="http://nebula.wsimg.com/8e81a8a0f1e82182a9b612b0b5b5cafb?AccessKeyId=232D31C88DDAE207E6CE&disposition=0&alloworigin=1"><h2 class="menu">Menu</h2>
+          </a>
+          <h2 onclick="About()" class="aboutnav" >About</h2>
+          <h2 onclick="contact()" class="contactnav">Contact</h2>
+        </div>
+
+
+      </div>
+      <footer>
+        <a target="_blank" href="https://www.instagram.com/explore/locations/236695878/slope-hatch-glenwood-springs/"><img src="images/instagramlogo.png"></a>
+        <a target="_blank" href="https://www.facebook.com/Slope-Hatch-Glenwood-Springs-415028918597365/"><img src="images/facebook_logo.png"></a>
+      </footer>
+    </div>
+  </body>
+</html>
